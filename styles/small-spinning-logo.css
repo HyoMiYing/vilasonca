@@ -1,0 +1,126 @@
+/* Overlap */
+.logo-and-text {
+    width: 56vmin;
+    height: 56vmin;
+    margin: auto;
+    /* margin-bottom: -10vh; */
+    padding: 5vmin 0 0 0;
+}
+
+.buffer-logo-container {
+  position: absolute;
+}
+
+
+.logo-container {
+    background-color: transparent;
+    width: 56vmin;
+    height: 56vmin;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.rays1 {
+  width: 40vmin;
+  height: 40vmin;
+  background-color: orange;
+  animation: rotation 12s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  border-radius: 5%;
+  position: absolute;
+}
+
+.rays2 {
+    width: 40vmin;
+    height: 40vmin;
+    background-color: orange;
+    animation: rotation2 12s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    border-radius: 5%;
+    position: absolute;
+}
+
+@keyframes rotation {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+    transform: rotate(359deg);
+    }
+}
+
+@keyframes rotation2 {
+from {
+    transform: rotate(45deg);
+}
+to {
+    transform: rotate(404deg);
+}
+}
+
+.camo-circle {
+    background-color: #FEFDD6;
+    width: 44vmin;
+    height: 44vmin;
+    border-radius: 50%;
+    position: absolute;
+}
+  
+.circle {
+    background-color: orange;
+    width: 40vmin;
+    height: 40vmin;
+    border-radius: 50%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* Text */
+.text-container {
+    background-color: transparent;
+    width: 56vmin;
+    height: 56vmin;
+    position: absolute;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.transparent-part {
+    /* padding-top: 0; */
+    padding-top: 17vmin;
+    flex-basis: 40%;
+}
+
+.transparent-part span {
+    font-size: 9vmin;
+    color: #FEFDD6;
+}
+
+.non-transparent-part {
+  flex-basis: 60%;
+  padding: 1vmin 0;
+  background-color: #FEFDD6;
+}
+
+.main-logo-text {
+  margin: 0;
+  padding: 0;
+  font-size: 8vmin;
+  vertical-align: bottom;
+}
+
+.secondary-logo-text {
+  margin: 0;
+  padding: 0;
+  font-size: 4.8vmin;
+  color: grey;
+  vertical-align: bottom;
+}
