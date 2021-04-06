@@ -7,14 +7,14 @@ html {
 h1 {
     margin: 0;
     padding: 16px 16px 0px 16px;
-    font-size: 5vmin;
+    font-size: 6vmin;
     text-align: center;
 }
 
 nav {
     display: none;
     position: absolute;
-    top: 60vmin;
+    /* top: 60vmin; */
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -38,26 +38,42 @@ nav ul li {
     background-color: orange;
     border-radius: 6px;
     line-height: 2;
-    padding: 1vmin 3vmin;
+    padding: 2vmin 6vmin;
     margin: 0.5vmin;
+    font-size: 4vmin;
+    border: 2px solid orange;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
 .selected-site {
     background-color: #FEFDD6;
-    border: 2px solid orange;
-}
-
-.selected-site {
     color: orange;
+    border: 2px solid orange;
 }
 
 nav a {
     font-weight: 900;
     text-decoration: none;
     color: #FEFDD6;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
-p{
+nav a:active {
+    color: orange;
+}
+
+nav a:active li {
+    background-color: #FEFDD6;
+    border: 2px solid orange;
+}
+
+p {
     line-height: 1.5;
     letter-spacing: 1px;
     padding: 1vmin;
@@ -82,4 +98,51 @@ img {
 header {
     display: flex;
     flex-direction: column;
+}
+
+@media screen and (min-width: 480px) {
+    header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    nav {
+        display: block;
+        align-self: center;
+        position: inherit;
+        top: auto;
+        left: auto;
+        transform: unset;
+    }
+
+    nav ul li {
+        border-radius: 3px;
+        line-height: 1.5;
+        padding: 1vmin 3vmin;
+        margin: 1vmin;
+        font-size: 3vmin;
+    }
+}
+  
+/*CSS for really wide screens*/
+@media (min-width: 1100px) {
+    h1 {
+        font-size: 4.5vmin;
+    }
+
+    header {
+        flex-direction: column;
+        justify-content: space-evenly;
+        margin-bottom: 5vmin;
+    }
+
+    .logo-and-text {
+        align-self: center;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: row;
+    }
 }

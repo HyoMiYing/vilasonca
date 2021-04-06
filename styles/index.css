@@ -2,6 +2,7 @@
     padding: 0;
     margin: 0 10vmin 10vmin 10vmin;
 }
+
 .page-menu li {
     margin: 2vmin;
     list-style-type: none;
@@ -32,10 +33,10 @@ ul {
 }
 
 .page-menu a {
-    -webkit-user-select: none;  /* Chrome all / Safari all */
-    -moz-user-select: none;     /* Firefox all */
-    -ms-user-select: none;      /* IE 10+ */
-    user-select: none;          /* Likely future */      
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
 a {
@@ -57,15 +58,6 @@ nav ul li:hover {
 nav ul li:hover a{
     color: #FEFDD6;
 }
- 
-.img-container {
-    width: 100vw;
-}
-
-img {
-    display: block;
-    margin: auto;
-}
 
 header {
     display: flex;
@@ -74,8 +66,54 @@ header {
 
 /* Tablet */
 @media screen and (min-width: 480px) {
+    body {
+        /* background-color: orange; */
+    }
+}
+
+/* Wide screens */
+@media (min-width: 800px) {
+
+    header {
+        flex-direction: row;
+        justify-content: space-evenly;
+        margin-bottom: 5vmin;
+    }
+
+    nav {
+        align-self: center;
+    }
+
+    .page-menu{
+        margin: 0;
+    }    
+
     .page-menu li {
-        margin: 1.5vmin;
-        font-size: 3.5vmin;
+        margin: 1vmin;
+        border-radius: 3x;
+        border: 1vmin solid orange;
+        font-size: 3vmin;
+        font-weight: 700;
+        padding: 1vmin 3vmin;
+    }
+
+    p {
+        line-height: 1;
+        letter-spacing: 1px;
+        padding: 0.5vmin;
+    }
+}
+
+/*CSS for really wide screens*/
+@media (min-width: 1100px) {
+    header {
+        flex-direction: column;
+        justify-content: space-evenly;
+        margin-bottom: 5vmin;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: row;
     }
 }
