@@ -47,11 +47,11 @@ nav ul li {
     border: 2px solid orange;
 }
 
-.selected-site a {
+.selected-site {
     color: orange;
 }
 
-li a {
+nav a {
     font-weight: 900;
     text-decoration: none;
     color: #FEFDD6;
