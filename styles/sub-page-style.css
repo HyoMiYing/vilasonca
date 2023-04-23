@@ -39,6 +39,7 @@ nav ul li {
     border-radius: 6px;
     line-height: 2;
     padding: 2vmin 6vmin;
+    padding-top: 16px;
     margin: 0.5vmin;
     font-size: 4vmin;
     border: 2px solid orange;
