@@ -35,6 +35,7 @@ nav ul {
 }
 
 nav ul li {
+    text-align: center;
     background-color: orange;
     border-radius: 6px;
     line-height: 2;
